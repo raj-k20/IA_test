@@ -1,7 +1,5 @@
 import sys
 
-n = sys.stdin.readline()
-
 class ReferenceInt:
 	def __init__(self):
 		self.val = 0
@@ -29,4 +27,13 @@ def get_ways(n):
 		tways = build_ways([arr[k]],fails,int(n))
 		ways += tways
 	print(ways, "%d/%d"%(fails.val,ways))
-get_ways(n)
+
+def main():
+	#taking input from user
+	n = sys.stdin.readline()
+	get_ways(n)
+
+
+if __name__ == '__main__':
+	main()
+	
